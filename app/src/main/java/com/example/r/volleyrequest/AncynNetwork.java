@@ -26,7 +26,7 @@ public class AncynNetwork extends AsyncTask<String,Integer,String> {
 
     String TAG="MainActivity";
 
-    public AncynNetwork(Context context, NetworkInterface networkInterface) {
+    public AncynNetwork(Context context, JSONObject jsonObject, NetworkInterface networkInterface) {
         this.networkInterface= networkInterface;
         this.context=context;
         alertDialog=new ProgressDialog(this.context);

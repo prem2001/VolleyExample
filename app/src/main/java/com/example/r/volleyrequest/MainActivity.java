@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
 //                test();
-                new AncynNetwork(MainActivity.this, new NetworkInterface() {
+                new AncynNetwork(MainActivity.this,new JSONObject(), new NetworkInterface() {
                     @Override
                     public void onError(String s) {
                         Log.d(TAG, "onError: "+s);
